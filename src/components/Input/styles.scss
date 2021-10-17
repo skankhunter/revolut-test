@@ -1,0 +1,39 @@
+.currency {
+   &__input {
+      border: 0;
+      text-align: right;
+      background: none;
+      font-size: 40px;
+      color: transparent;
+      caret-color: #000;
+      width: 350px;
+
+      &--wrapper {
+         position: absolute;
+         right: 20px;
+         top: 20px;
+      }
+
+      &-value {
+         font: 400 40px Arial;
+         position: absolute;
+         top: 50%;
+         right: 0;
+         transform: translateY(-50%);
+         pointer-events: none;
+      }
+
+      &-hint {
+         position: absolute;
+         font-size: 16px;
+         right: 0;
+         top: 45px;
+         color: red;
+      }
+
+      &:focus {
+         outline: 0;
+         border: 0;
+      }
+   }
+}

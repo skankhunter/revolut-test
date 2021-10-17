@@ -1,0 +1,64 @@
+.currency {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   background: #fff;
+   margin-bottom: 20px;
+   border-radius: 6px;
+   padding: 10px 0;
+
+   &--wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+   }
+
+   &__name {
+      font-size: 44px;
+
+      &-icon {
+         position: absolute;
+         top: 30px;
+         left: 120px;
+         width: 13px;
+
+         &:before {
+            content: "";
+            width: 2px;
+            height: 11px;
+            position: absolute;
+            background: #000;
+            left: 2px;
+            top: 0;
+            transform: rotate(-45deg);
+         }
+
+         &:after {
+            content: "";
+            width: 2px;
+            height: 11px;
+            position: absolute;
+            background: #000;
+            right: 2px;
+            top: 0;
+            transform: rotate(45deg);
+         }
+      }
+   }
+
+   &__balance {
+      font-size: 20px;
+      color: #999;
+
+      &-info {
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+         padding-left: 20px;
+      }
+
+      &.red {
+         color: red;
+      }
+   }
+}

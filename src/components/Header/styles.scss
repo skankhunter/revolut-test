@@ -1,0 +1,43 @@
+.header {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: left;
+   font: 400 26px Arial;
+   position: relative;
+   padding-left: 20px;
+   z-index: 1;
+
+   &__text {
+      margin-top: 20px;
+      font-weight: bold;
+   }
+
+   &__rate {
+      color: #0061ea;
+      font-size: 16px;
+      font-weight: bold;
+   }
+
+   &__back {
+      display: block;
+      width: 15px;
+      height: 15px;
+      margin-top: 10px;
+      border-top: 2px solid #000;
+      border-left: 2px solid #000;
+
+      transform: rotate(-45deg);
+
+      &::after {
+         content: "";
+         display: block;
+         width: 2px;
+         height: 35px;
+         background-color: black;
+         transform: rotate(-45deg) translate(12px, 4px);
+         left: 0;
+         top: 0;
+      }
+   }
+}
